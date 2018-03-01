@@ -31,8 +31,8 @@ class Content extends Component {
       this.setState({
         showModal: false
       })
+      this.props.addCart(item)
     }, 900)
-    this.props.addCart(item)
   }
 
   handleCloseModal() {
